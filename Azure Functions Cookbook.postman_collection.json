@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f96f3199-110c-4bfa-b015-9fae5ccc9f35",
+		"_postman_id": "edd07653-dd4b-422b-92c1-a6322caa319a",
 		"name": "Azure Functions Cookbook",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -10,9 +10,12 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {},
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
 				"url": {
-					"raw": "{{server}}/api/MyHttpTrigger?code=P8P3LypjA8Jn/0u4EtKkpvKyHvwNJloshLw9VEhLZe8k7pZzfX8Ccg==&name=Postman",
+					"raw": "{{server}}/api/MyHttpTrigger?name=Postman",
 					"host": [
 						"{{server}}"
 					],
@@ -21,10 +24,6 @@
 						"MyHttpTrigger"
 					],
 					"query": [
-						{
-							"key": "code",
-							"value": "P8P3LypjA8Jn/0u4EtKkpvKyHvwNJloshLw9VEhLZe8k7pZzfX8Ccg=="
-						},
 						{
 							"key": "name",
 							"value": "Postman"
@@ -44,19 +43,13 @@
 					"raw": "{\n    \"name\" : \"Postman\"\n}"
 				},
 				"url": {
-					"raw": "{{server}}/api/MyHttpTrigger?code=P8P3LypjA8Jn/0u4EtKkpvKyHvwNJloshLw9VEhLZe8k7pZzfX8Ccg==",
+					"raw": "{{server}}/api/MyHttpTrigger",
 					"host": [
 						"{{server}}"
 					],
 					"path": [
 						"api",
 						"MyHttpTrigger"
-					],
-					"query": [
-						{
-							"key": "code",
-							"value": "P8P3LypjA8Jn/0u4EtKkpvKyHvwNJloshLw9VEhLZe8k7pZzfX8Ccg=="
-						}
 					]
 				}
 			},
